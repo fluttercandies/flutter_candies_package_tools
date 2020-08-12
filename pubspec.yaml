@@ -1,0 +1,21 @@
+name: flutter_candies_package_tools
+description: tool to create package and example.
+version: 1.0.0
+homepage: https://github.com/fluttercandies/flutter_candies_package_tools
+
+environment:
+  sdk: '>=2.7.0 <3.0.0'
+
+#dependencies:
+#  path: ^1.6.0
+
+dev_dependencies:
+  pedantic: ^1.8.0
+  test: ^1.6.0
+
+executables:
+  create_package: main
+
+
+ # pub global activate --source path ./
+ # pub global activate create_package
