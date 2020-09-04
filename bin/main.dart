@@ -13,8 +13,8 @@ void main(List<String> arguments) {
     workingDirectory: './$name',
   );
 
-  File('./$name/example/pubspec.yaml').writeAsStringSync(exampleYaml.replaceAll(
-      'create_demo', name.replaceAll('create_package', name)));
+  File('./$name/example/pubspec.yaml')
+      .writeAsStringSync(exampleYaml.replaceAll('create_package', name));
 
   File('./$name/example/ff_annotation_route_commands')
     ..createSync()
@@ -90,7 +90,11 @@ dependencies:
 
   cupertino_icons: ^0.1.2
   url_launcher: 5.3.0  
-  create_demo:
+  http_client_helper: any  
+  extended_image: any    
+  like_button: any
+  extended_sliver: ^1.0.1    
+  create_package:
     path: ../
 
 dev_dependencies:
